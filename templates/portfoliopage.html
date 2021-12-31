@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<!--HEAD-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" charset="UTF-8">
+	<title>Mason G.</title>
+	<link rel="stylesheet" href="{% static 'css/homepage.css'%}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicon/apple-touch-icon.png'%}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon/favicon-32x32.png'%}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon/favicon-16x16.png'%}">
+    <link rel="manifest" href="{% static 'img/favicon/site.webmanifest'%}">
+
+	<script src=""></script>
+	<style>
+
+        /* Internal CSS Styling */        
+
+        .project {
+            background-color: rgb(255, 255, 255, .9);
+            font-family: "Chakra Petch";
+            width: 80%;
+            height: 20%;
+            border: rgb(171, 171, 171) 4px solid;
+            border-radius: 10px;
+            margin-top: 75px;
+            margin-bottom: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            padding: 15px;
+        }
+        .project_img {
+            border-radius: 10px;
+            height: 150px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        .project_details {
+            text-align: center;
+        }
+        .project_title {
+            text-align: center;
+        }
+        .project_description {
+            text-align: center;
+            align-content: center;
+            margin: 0 auto;
+        }
+
+
+        .project_button {
+            height: 5em;
+            width: 40%;
+            background-color: rgb(206, 206, 206);
+            border: black 2px solid;
+            border-radius: 10px;
+            transition-duration: 0.4s;
+            position: relative;
+            margin-top: 2.5%;
+            font-size: 95%;
+            font-family: "Chakra Petch";
+        }
+        .project_button:hover {
+            background-color: black;
+            color: white;
+            border: grey 2px solid;
+            width: 70%;
+            cursor: pointer;
+        }
+        .project_button:active {
+            animation: bouncy 0.25s linear;
+        }
+        @keyframes bouncy {
+            0%{top:0em}
+            15%{top:-0.9em}
+            40%{top:0em}
+            60%{top:-0.4em}
+            100%{top:0em}  
+        }
+
+	</style>
+</head>
+
+
+
+
+<!--BODY-->
+<body style="background-image: url('/static/img/space4k.jpg'); background-size: auto; background-attachment: scroll; font-family: Righteous;">
+
+    <!--NAVIGATION BAR-->
+	<ul class="nav_list">
+        <!-- HOME PAGE LINK -->
+        <a href="/home/" class="nav_links">
+            <li class="nav_items">
+                <h2 class="nav_links_titles">Home<h2>
+            </li>
+        </a>
+        <!-- PROJECTS PAGE LINK -->
+        <a href="/projects/" class="nav_links">
+            <li class="nav_items">
+                <h2 class="nav_links_titles">Projects</h2>
+            </li>
+        </a>
+        <!-- NAVIGATION TITLE -->
+        <li class="nav_items" id="title">
+            <h1 class="nav_title">Portfolio</h1>
+        </li>
+        <!-- GITHUB PAGE LINK -->
+        <li style="float: right; border-right: none; width: 50px; margin-right: 2px;" class="nav_items">
+            <a href="https://github.com/spacewizard66" target="_blank"><img class="nav_github" src="{% static 'img/Github.png'%}"></a>
+        </li>
+        <!-- LINKEDIN PAGE LINK -->
+        <li style="float: right; border-right: none; border-left: black 2px solid; width: 40px;" class="nav_items">
+            <a href="https://www.linkedin.com/in/mason-galat/" target="_blank"><img class="nav_linkedin" src="{% static 'img/linkedin.png'%}"></a>
+        </li>
+    </ul>
+
+
+    <!--PROJECTS FROM DATABASE-->
+    {% for project in projects %}
+            <div class="project">
+                <img class="project_img" src="{% static project.image %}">
+                <div class="project_details">
+                    <h4 class="project_title">{{ project.title }}</h4>
+                    <p class="project_description">{{ project.description }}</p>
+                    <a href="{{ project.url }}" target="_blank">
+                        <button class="project_button">
+                            Learn More
+                        </button>
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+
+</body>
+
+</html>

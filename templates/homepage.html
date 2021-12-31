@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<!--HEAD-->
+<head>
+    <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" charset="UTF-8">
+	<title>Mason G.</title>
+	<link rel="stylesheet" href="{% static 'css/homepage.css'%}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicon/apple-touch-icon.png'%}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon/favicon-32x32.png'%}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon/favicon-16x16.png'%}">
+    <link rel="manifest" href="{% static 'img/favicon/site.webmanifest'%}">
+	
+</head>
+
+
+
+
+<!--BODY-->
+<body class="homebody">
+
+    <!-- NAVIGATION BAR -->
+    <ul class="nav_list">
+        <!-- HOME PAGE LINK -->
+        <a href="/home/" class="nav_links">
+            <li class="nav_items">
+                <h2 class="nav_links_titles">Home<h2>
+            </li>
+        </a>
+        <!-- PROJECTS PAGE LINK -->
+        <a href="/projects/" class="nav_links">
+            <li class="nav_items">
+                <h2 class="nav_links_titles">Projects</h2>
+            </li>
+        </a>
+        <!-- NAVIGATION TITLE -->
+        <li class="nav_items" id="title">
+            <h1 class="nav_title">Portfolio</h1>
+        </li>
+        <!-- GITHUB PAGE LINK -->
+        <li style="float: right; border-right: none; width: 50px; margin-right: 2px;" class="nav_items">
+            <a href="https://github.com/spacewizard66" target="_blank"><img class="nav_github" src="{% static 'img/Github.png'%}"></a>
+        </li>
+        <!-- LINKEDIN PAGE LINK -->
+        <li style="float: right; border-right: none; border-left: black 2px solid; width: 40px;" class="nav_items">
+            <a href="https://www.linkedin.com/in/mason-galat/" target="_blank"><img class="nav_linkedin" src="{% static 'img/linkedin.png'%}"></a>
+        </li>
+    </ul>
+
+
+
+
+
+    <!-- HOME TITLE -->
+    <div class="home_title_div">
+        <h1 class="home_title">Welcome to my Website!</h1>
+    </div>
+
+    <!-- HOME DESCRIPTION -->
+    <div class="home_description_div">
+        <img class="home_photo" src="{% static 'img/photograph3.jpg'%}">
+        <p class="home_description">
+            Hi, my name is Mason Galat. I am a S.T.E.M. and space enthusiast, and a self-taught developer. Whenever I'm not flipping my skateboard on a beautiful day, I am learning new technologies and solving problems in motivational ways. In the future, I aspire to become a great and meaningful developer.
+        </p>
+    </div>
+
+
+
+
+
+    <!-- HOME UFO -->
+    <div id="ship_div">
+        <img class="ship" src="{% static 'img/UFO.gif' %}"/>
+    </div>
+
+
+</body>
+
+</html>
