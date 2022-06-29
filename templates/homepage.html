@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
+
 <!--HEAD-->
 <head>
     <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" charset="UTF-8">
@@ -11,8 +12,86 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon/favicon-32x32.png'%}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon/favicon-16x16.png'%}">
     <link rel="manifest" href="{% static 'img/favicon/site.webmanifest'%}">
-	
+
+    <!-- Start: Copyright 2022 TraceMyIP.org Service Code (172716-06142022)- DO NOT MODIFY //-->
+    <div id="elemID031021" style="line-height:16px;text-align:center;position:relative;z-index:100000;">
+        <script type="text/javascript" src="//s3.tracemyip.org/tracker/lgUrl.php?random='+Math.random()+'&amp;stlVar2=1213&amp;rgtype=4684NR-IPIB&amp;pidnVar2=62768&amp;prtVar2=7&amp;scvVar2=12"></script>
+        <noscript>
+            <a title="ip address tracker" href="https://www.tracemyip.org/">
+                <img src="//s3.tracemyip.org/tracker/1213/4684NR-IPIB/62768/7/12/ans/" alt="Ip address tracker" referrerPolicy="no-referrer-when-downgrade" style="border:0px;">
+            </a>
+        </noscript>
+    </div>
+    <!-- End: TraceMyIP.org Service Code //-->
+
+    <style>
+        /* Internal CSS Styling */        
+
+        .project {
+            background-color: rgb(255, 255, 255, .9);
+            font-family: "Chakra Petch";
+            box-shadow: 4px 3px 8px 1px #969696;
+            border-radius: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            /*overflow: hidden;*/
+        }
+
+        .project_img {
+            border-radius: 15px;
+            margin: 0 auto;
+        }
+
+        .project_details {
+            height: 100%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .project_title {
+            text-align: center;
+            text-shadow: rgba(0,0,0,1) 0 0 2px;
+            position: relative;
+        }
+        .project_description {
+            text-align: center;
+            align-content: center;
+            margin: 0 auto;
+            font-family: "Roboto+Slab", sans-serif;
+        }
+
+
+        .project_button {
+            background-color: rgb(148, 148, 148);
+            border: black 1px solid;
+            border-radius: 10px;
+            transition-duration: 0.2s;
+            position: relative;
+            font-size: 100%;
+            font-family: "Chakra Petch", sans-serif;
+        }
+        .project_button:hover {
+            background-color: rgb(169, 133, 255);
+            color: rgb(0, 0, 0);
+            width: 70%;
+            cursor: pointer;
+            font-size: 110%;
+        }
+        .project_button:active {
+            animation: bouncy 0.15s linear;
+            font-size: 110%;
+        }
+        @keyframes bouncy {
+            0%{top:0em}
+            15%{top:-0.9em}
+            40%{top:0em}
+            60%{top:-0.4em}
+            100%{top:0em}  
+        }
+	</style>
+
 </head>
+
+
 
 
 
@@ -29,23 +108,11 @@
             </li>
         </a>
         <!-- PROJECTS PAGE LINK -->
-        <a href="/projects/" class="nav_links">
+        <a href="{% static 'img/Mason_Galat_Resume.pdf'%}" class="nav_links">
             <li class="nav_items">
-                <h2 class="nav_links_titles">Projects</h2>
+                <h2 class="nav_links_titles">Resume</h2>
             </li>
         </a>
-        <!-- NAVIGATION TITLE -->
-        <li class="nav_items" id="title">
-            <h1 class="nav_title">Portfolio</h1>
-        </li>
-        <!-- GITHUB PAGE LINK -->
-        <li style="float: right; border-right: none; width: 50px; margin-right: 2px;" class="nav_items">
-            <a href="https://github.com/spacewizard66" target="_blank"><img class="nav_github" src="{% static 'img/Github.png'%}"></a>
-        </li>
-        <!-- LINKEDIN PAGE LINK -->
-        <li style="float: right; border-right: none; border-left: black 2px solid; width: 40px;" class="nav_items">
-            <a href="https://www.linkedin.com/in/mason-galat/" target="_blank"><img class="nav_linkedin" src="{% static 'img/linkedin.png'%}"></a>
-        </li>
     </ul>
 
 
@@ -53,27 +120,59 @@
 
 
     <!-- HOME TITLE -->
-    <div class="home_title_div">
-        <h1 class="home_title">Welcome to my Website!</h1>
+    <!--<div class="home_title_div">
+        <h1 class="home_title">TESTING!!!</h1>
     </div>
+    -->
 
     <!-- HOME DESCRIPTION -->
     <div class="home_description_div">
-        <img class="home_photo" src="{% static 'img/photograph3.jpg'%}">
+        <img class="home_photo" src="{% static 'img/photo1.jpg'%}">
+        <h1 class="home_name">Mason Galat</h1>
+        <hr class="home_row">
+
+        <p style="color: rgb(123, 123, 123); font-size: 1.1em;">Developer</p>
+        <p class="home_skills">HTML / Python / Django / CSS / SASS / Git</p>
+
         <p class="home_description">
-            Hi, my name is Mason Galat. I am a S.T.E.M. and space enthusiast, and a self-taught developer. Whenever I'm not flipping my skateboard on a beautiful day, I am learning new technologies and solving problems in motivational ways.
+        Fun, motivated dude from Pennsylvania, USA.<br><br>
+        Aspiring self-taught web developer.<br><br>
+        I am also a skateboarding meme enthusiast.
         </p>
+        <b class="home_email">mason4work@outlook.com</b><br><br>
+
+        <!-- GITHUB PAGE LINK -->
+        <a href="https://github.com/spacewizard66" target="_blank"><img class="nav_github" src="{% static 'img/Github.png'%}"></a>
+        <!-- LINKEDIN PAGE LINK -->
+        <a href="https://www.linkedin.com/in/mason-galat/" target="_blank"><img class="nav_linkedin" src="{% static 'img/linkedin.png'%}"></a>
     </div>
 
 
 
+    <!--PROJECTS FROM DATABASE-->
+    {% for project in projects %}
+        <div class="project">
+            <img class="project_img" src="{% static project.image %}">
+            <div class="project_details">
+                <h2 class="project_title">{{ project.title }}</h2>
+                <p class="project_description">{{ project.description }}</p>
+                <a href="{{ project.url }}" target="_blank">
+                    <button class="project_button">
+                        Learn More
+                    </button>
+                </a>
+            </div>
+        </div>
+    {% endfor %}
 
 
-    <!-- HOME UFO -->
+
+
+<!-- HOME FLYING UFO
     <div id="ship_div">
         <img class="ship" src="{% static 'img/UFO.gif' %}"/>
     </div>
-
+-->
 
 </body>
 
