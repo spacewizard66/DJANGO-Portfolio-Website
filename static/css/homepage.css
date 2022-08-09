@@ -2,15 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:wght@200");
 
 
-
-
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-
-
 
 body {
     margin: 0;
@@ -22,9 +17,6 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-
-
-
 
 
 /* Navigation Bar */
@@ -64,7 +56,6 @@ body {
     border-right: none;
 }*/
 
-
 /* Navigation Links */
 .nav_links {
     /*border-right: black 2px solid;*/
@@ -96,52 +87,46 @@ body {
 .nav_links:active {
     background-color: rgb(162, 162, 162);
 }
+/* .nav_photo {
+    height: 100%;
+    width: 40px;
+    float: right;
+    margin-top: 5px;
+} */
 
 
 /* Navigation Social Links */
 .nav_github {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
     transition: all 0.1s;
 }
 .nav_linkedin {
-    margin-top: 6px;
+    /*margin-top: 6px;*/
     margin-left: 4%;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
     transition: all 0.1s;
 }
 .nav_github:hover {
-    height: 30px;
-    width: 30px;
-    padding: 5px;
+    height: 40px;
+    width: 40px;
+    padding: 0px;
     color: white;
 }
 .nav_linkedin:hover {
-    height: 30px;
-    width: 30px;
-    padding: 5px;
+    height: 40px;
+    width: 40px;
+    padding: 0px;
     color: white;
 }
 
 
+
 /*====================================================================================================================*/
-/*
-.home_title_div {
-    width: 85%;
-    background-color: rgb(255, 255, 255, .8);
-    font-family: "Chakra Petch";
-    box-shadow: 4px 3px 8px 1px #969696;
-  	-webkit-box-shadow: 4px 3px 8px 1px #969696;
-    border-radius: 10px;
-    margin: auto;
-    margin-top: 1%;
-}
-.home_title {
-    color: black;
-    text-align: center;
-}
-*/
+
 
 .home_description_div {
     box-shadow: 4px 3px 8px 1px #969696;
@@ -178,27 +163,7 @@ body {
 }
 
 
-
-
-
-/* Self Portrait Image*/
-.portrait {
-    display: block;
-    width: 50%;
-    height: 25%;
-}
-.portrait_image {
-    width: 250px;
-    height: 600px;
-}
-
-
-
-
 /*=================================================================================================================*/
-
-
-
 
 
 /* Scaling for Responsiveness*/    
@@ -221,7 +186,7 @@ body {
     .project_img {height: 10em; width: 100%;}
     .project_button{height: 4em; width: 80%; margin-top: 4%; margin-bottom: 2%;}
     .project_title {font-size: 1.1em;}
-    .project_description {height: 40%; width: 100%; font-size: 0.8em;}
+    .project_description {height: 50%; width: 100%; font-size: 0.8em;}
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -237,7 +202,7 @@ body {
     .home_skills {font-size: 1em;}
     .home_email {font-size: 1em;}
 
-    .project {height: 230px; width: 65%; padding: 2%; margin-bottom: 40px;}
+    .project {height: 230px; width: 70%; padding: 2%; margin-bottom: 40px;}
     .project_details {width: 60%; float: right;}
     .project_img {height: 100%; width: 35%;}
     .project_button{height: 4em; width: 40%; margin-top: 8%;}
