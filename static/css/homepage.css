@@ -1,20 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Righteous|Chakra Petch");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:wght@200");
 
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 body {
     margin: 0;
-    font-family: "Righteous", sans-serif
 }
 
 /* Home Page Body */
 .homebody {
-    background-image: url(/static/img/RealEarth.jpg);
+    background-color: rgb(227, 215, 255);
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-
-
-
 
 
 /* Navigation Bar */
@@ -24,24 +26,25 @@ body {
     top: 0;
     margin: 0 auto;
     list-style-type: none;
+    font-family: "Chakra Petch", sans-serif;
     overflow: hidden;
     position: relative;
-    background-color: rgb(216, 216, 216);
-    border-bottom: black 2px solid;
+    background-color: rgb(169, 133, 255);
+    /*border-bottom: black 2px solid;*/
 }
 .nav_list .nav_items {
     display: block;
     color: rgb(0, 0, 0);
     height: 50px;
+    text-shadow: rgba(0,0,0,2) 0 0 2px;
 }
 .nav_items {
-    height: 50px;
     width: 100%;
     float: left;
 }
 
 /* Navigation Title */
-.nav_title {
+/*.nav_title {
     display: block;
     text-align: center;
     color: rgb(128, 0, 255);
@@ -51,13 +54,11 @@ body {
     width: 36%;
     font-size: 1.25em;
     border-right: none;
-}
-
+}*/
 
 /* Navigation Links */
 .nav_links {
-    width: 16.5%;
-    border-right: black 2px solid;
+    /*border-right: black 2px solid;*/
     color: black;
     float: left;
     text-decoration: none;
@@ -67,15 +68,16 @@ body {
     font-size: 85%;
     text-align: center;
     margin: auto;
-    color: rgb(128, 0, 255);
-    transition: 0.5s;
+    color: rgb(0, 0, 0);
+    transition: .75s;
 }
 .nav_links_titles:hover {
-    color: rgb(225, 68, 68);
+    color: rgb(255, 255, 255);
+    
 }
 .nav_links:hover {
     background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");;
-    animation: line 1s;
+    animation: line .5s;
     cursor: pointer;
     background-position-y: 52px;
 }
@@ -83,144 +85,127 @@ body {
     0% {background-position-x: 100%;}
 }
 .nav_links:active {
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(162, 162, 162);
 }
+/* .nav_photo {
+    height: 100%;
+    width: 40px;
+    float: right;
+    margin-top: 5px;
+} */
 
 
 /* Navigation Social Links */
 .nav_github {
-    margin-top: 5px;
-    margin-left: 8px;
-    display: block;
-    height: 80%;
-    width: 80%;
-    transition: all 0.15s;
-}
-.nav_linkedin {
-    margin-top: 6px;
-    margin-left: 5px;
-    display: block;
-    height: 40px;
-    width: 40px;
-    transition: all 0.15s;
-}
-.nav_github:hover {
     height: 30px;
     width: 30px;
     padding: 5px;
+    transition: all 0.1s;
+}
+.nav_linkedin {
+    /*margin-top: 6px;*/
+    margin-left: 4%;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    transition: all 0.1s;
+}
+.nav_github:hover {
+    height: 40px;
+    width: 40px;
+    padding: 0px;
     color: white;
 }
 .nav_linkedin:hover {
-    height: 30px;
-    width: 30px;
-    padding: 5px;
+    height: 40px;
+    width: 40px;
+    padding: 0px;
     color: white;
 }
 
 
 
+/*====================================================================================================================*/
 
 
-.home_title_div {
-    width: 85%;
-    background-color: rgb(255, 255, 255, .8);
-    font-family: "Chakra Petch";
-    border: rgb(171, 171, 171) 4px solid;
-    border-radius: 10px;
-    margin: auto;
-    margin-top: 6%;
-}
-.home_title {
-    color: black;
-    text-align: center;
-}
 .home_description_div {
-    width: 85%;
-    height: 200%;
-    border: 4px solid rgb(171, 171, 171);
-    border-radius: 15px;
-    /*border-style: groove;*/
-    background-color: rgb(255, 255, 255, .8);
-    margin: 0 auto;
-    margin-top: 6%;
-    margin-bottom: 6%;
+    box-shadow: 4px 3px 8px 1px #969696;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
     text-align: center;
+    padding-bottom: 1%;
 }
 .home_description {
-    width: 85%;
-    margin: 4% auto;
+    margin: 3% auto;
     text-align: center;
-    font-size: 1.25 em;
-    font-family: "Chakra Petch";
+    font-family: "Roboto+Slab", sans-serif;
+}
+.home_name {
+    font-family: "Chakra Petch", sans-serif;
+    text-shadow: rgba(0,0,0,1) 0 0 2px;
+}
+.home_row {
+    color: blueviolet;
+    border: 3px solid
+}
+.home_skills {
+    color: blueviolet;
+    font-family: "Chakra Petch", sans-serif;
 }
 .home_photo {
-    width: 200px;
-    height: 200px;
     border-radius: 50%;
-    margin-top: 2%;
+    margin-top: 4%;
+}
+.home_email {
+    margin: 0 auto;
+    font-family: "Roboto+Slab", sans-serif;
 }
 
 
-
-/* Self Portrait Image*/
-.portrait {
-    display: block;
-    width: 50%;
-    height: 25%;
-}
-.portrait_image {
-    width: 250px;
-    height: 600px;
-}
-
-
-
-/* UFO Space Ship On Home Tab */
-#ship_div {
-    width: 100%;
-    height: 100px;
-    bottom: 0.5%;
-    position: fixed;
-    z-index: -1;
-    overflow: hidden;
-}   
-.ship{
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    animation: fly 6s linear infinite;
-}
-@keyframes fly {
-    0% {left: -20%;}
-    100% {left: 250%;}
-}
-
-
-
+/*=================================================================================================================*/
 
 
 /* Scaling for Responsiveness*/    
 @media only screen and (min-width: 30px) {
     /* For Mobile*/
-        .homebody {background-size: cover;}
-        .project_img {width: 95%;}
-        .project_button{width: 60%;}
-        .project_description {height: 90%; width: 80%;}
-        .nav_title {font-size: 90%; padding-top: 10px; height: 40px;}
-        .nav_links {font-size: 90%;}
-        .nav_links_titles {padding-top: 15px; height: 35px}
-        .home_title {font-size: 1.25em;}
-        .home_description {font-size: 1em;}
+    .homebody {background-size: cover;}
+    .nav_title {font-size: 90%; padding-top: 10px; height: 40px;}
+    .nav_links {font-size: 90%; width: 45%;}
+    .nav_links_titles {padding-top: 15px; height: 35px}
+
+    .home_description_div {width: 85%; height: 200%; margin-top: 5%; margin-bottom: 15%;}
+    .home_description {width: 95%; font-size: .9em;}
+    .home_photo {height: 200px; width: 200px;}
+    .home_row {width: 70%;}
+    .home_skills {font-size: .7em;}
+    .home_email {font-size: .8em;}
+
+    .project {height: 40%; width: 75%; padding: 4%; margin-bottom: 20px;}
+    .project_details {width: 100%; align-self: center;}
+    .project_img {height: 10em; width: 100%;}
+    .project_button{height: 4em; width: 80%; margin-top: 4%; margin-bottom: 2%;}
+    .project_title {font-size: 1.1em;}
+    .project_description {height: 50%; width: 100%; font-size: 0.8em;}
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-        .homebody {background-size: cover; /*overflow: hidden;*/}
-        .project_img {width: 30%;}
-        .project_button{width: 35%;}
-        .project_description {height: 50px; width: 40%;}
-        .nav_title {font-size: 1.8em; padding-top: 5px; height: 45px}
-        .nav_links {font-size: 1.5em;}
-        .nav_links_titles {padding-top: 10px; height: 40px;}
-        .home_title {font-size: 2em;}
-        .home_description {font-size: 1.25em;}
+    .homebody {background-size: cover; /*overflow: hidden;*/}
+    .nav_title {font-size: 1.8em; padding-top: 5px; height: 45px}
+    .nav_links {font-size: 1.5em; width: 16.5%;}
+    .nav_links_titles {padding-top: 10px; height: 40px;}
+
+    .home_description_div {width: 70%; height: 200%; margin-top: 2%; margin-bottom: 5%;}
+    .home_description {width: 85%; font-size: 1.2em;}
+    .home_photo {width: 500px; height: 500px;}
+    .home_row {width: 30%;}
+    .home_skills {font-size: 1em;}
+    .home_email {font-size: 1em;}
+
+    .project {height: 230px; width: 70%; padding: 2%; margin-bottom: 40px;}
+    .project_details {width: 60%; float: right;}
+    .project_img {height: 100%; width: 35%;}
+    .project_button{height: 4em; width: 40%; margin-top: 8%;}
+    .project_title {font-size: 1.3em;}
+    .project_description {height: 50px; width: 80%; font-size: 1.1em;}
 }
